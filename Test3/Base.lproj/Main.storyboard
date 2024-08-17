@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wG4-dM-9ng">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="eJF-3r-Q2r">
+            <objects>
+                <viewController id="wG4-dM-9ng" customClass="ViewController" customModule="Test3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YhW-gc-hhQ">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Boy Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IKH-4l-M4g">
+                                <rect key="frame" x="20" y="209" width="390" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="2fo-r9-riy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kilo Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wOi-44-6h4">
+                                <rect key="frame" x="20" y="309" width="390" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="8En-Be-vIn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLD-J8-8zS">
+                                <rect key="frame" x="20" y="838" width="390" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ba7-dz-NwS"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="actionCalculate" destination="wG4-dM-9ng" eventType="touchUpInside" id="cLI-ZD-Bkh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="opf-bF-XPq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="opf-bF-XPq" firstAttribute="trailing" secondItem="HLD-J8-8zS" secondAttribute="trailing" constant="20" id="79i-WH-bzW"/>
+                            <constraint firstItem="opf-bF-XPq" firstAttribute="trailing" secondItem="wOi-44-6h4" secondAttribute="trailing" constant="20" id="9u8-un-XCx"/>
+                            <constraint firstItem="opf-bF-XPq" firstAttribute="trailing" secondItem="IKH-4l-M4g" secondAttribute="trailing" constant="20" id="A07-b6-ZHe"/>
+                            <constraint firstItem="HLD-J8-8zS" firstAttribute="leading" secondItem="opf-bF-XPq" secondAttribute="leading" constant="20" id="HnS-dH-CU3"/>
+                            <constraint firstItem="IKH-4l-M4g" firstAttribute="top" secondItem="opf-bF-XPq" secondAttribute="top" constant="150" id="MGl-Oe-TM4"/>
+                            <constraint firstItem="wOi-44-6h4" firstAttribute="top" secondItem="IKH-4l-M4g" secondAttribute="bottom" constant="40" id="PZ9-4I-ReY"/>
+                            <constraint firstItem="wOi-44-6h4" firstAttribute="leading" secondItem="opf-bF-XPq" secondAttribute="leading" constant="20" id="ePb-7d-jC3"/>
+                            <constraint firstItem="IKH-4l-M4g" firstAttribute="leading" secondItem="opf-bF-XPq" secondAttribute="leading" constant="20" id="iRv-AX-4e7"/>
+                            <constraint firstItem="opf-bF-XPq" firstAttribute="bottom" secondItem="HLD-J8-8zS" secondAttribute="bottom" constant="20" id="wtM-Zz-mVc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnLogin" destination="HLD-J8-8zS" id="tQI-OY-mQz"/>
+                        <outlet property="txtfldHeight" destination="IKH-4l-M4g" id="F0d-NX-FVd"/>
+                        <outlet property="txtfldWeight" destination="wOi-44-6h4" id="dmc-Gk-IFc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E4J-qz-ggb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-855.34883720930236" y="-100.42918454935624"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
